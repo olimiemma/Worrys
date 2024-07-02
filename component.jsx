@@ -1,0 +1,57 @@
+/**
+ * v0 by Vercel.
+ * @see https://v0.dev/t/t2SACkMZBs7
+ * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
+ */
+export default function Component() {
+  return (
+    <div className="flex justify-center items-center h-screen bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+      <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+        <h1 className="text-3xl font-bold mb-4 text-center">Share Your Words</h1>
+        <form className="space-y-4">
+          <div>
+            <label htmlFor="age" className="block font-medium mb-1">
+              Age
+            </label>
+            <input
+              type="number"
+              id="age"
+              placeholder="Enter your age"
+              className="w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 p-2"
+            />
+          </div>
+          <div>
+            <label htmlFor="name" className="block font-medium mb-1">
+              Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              className="w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 p-2"
+            />
+          </div>
+          <div>
+            <label htmlFor="words" className="block font-medium mb-1">
+              Your Words
+            </label>
+            <textarea
+              id="words"
+              rows={5}
+              placeholder="Type your words here..."
+              className="w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 p-2"
+            />
+          </div>
+          <div className="flex justify-end">
+            <button
+              type="submit"
+              className="bg-indigo-500 hover:bg-indigo-600 text-white font-medium py-2 px-4 rounded-md"
+            >
+              Save Words
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  )
+}
